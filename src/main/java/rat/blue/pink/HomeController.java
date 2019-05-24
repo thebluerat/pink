@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/board")
-public class HomeController {
+public class HomeController {//리퀘스트 매핑
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
@@ -25,7 +25,7 @@ public class HomeController {
 	@RequestMapping("/insert")
 	public String insert() {
 		logger.info("Welcome home! The client locale is " + 1 + ".");
-		return "home";
+		return "insert";
 	}
 		
 			
